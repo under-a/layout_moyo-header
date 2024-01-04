@@ -1,0 +1,75 @@
+:root {
+  --active: #00acdc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+}
+
+nav {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+nav ul {
+  flex-direction: row;
+  list-style: none;
+  display: flex;
+}
+
+nav ul a {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  align-items: center;
+  height: 60px;
+  margin-left: 20px;
+  text-decoration: none;
+  display: flex;
+}
+
+nav ul a:hover {
+  color: var(--active);
+}
+
+a.is-active {
+  color: var(--active);
+  display: flex;
+  position: relative;
+}
+
+a.is-active:after {
+  content: "";
+  border: 2px solid var(--active);
+  box-sizing: border-box;
+  border-radius: 8px;
+  justify-content: center;
+  align-self: flex-end;
+  width: 100%;
+  display: flex;
+  position: absolute;
+}
+
+.nav ul li:first-child a {
+  margin-left: 0;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
